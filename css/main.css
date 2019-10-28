@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Hans';
+    font-weight: normal;
+    font-size: normal;
+    src: url(../fonts/NeueHansKendrick-Regular.ttf),
+        url(../fonts/NeueHansKendrick-Regular.otf);
+}
+
 body {
     background: #ffffff;
     text-decoration: none;
@@ -101,6 +109,7 @@ h1, h2 {
     color: white;
     font-weight: bold;
     font-size: 30px;
+    font-family: 'Hans';
     /* position: absolute;
     bottom: 0;
     left: 0; */
@@ -126,6 +135,8 @@ h1, h2 {
 .news-item h2 {
     padding: 0 26px 22px 26px;
     font-size: 22px;
+    font-family: 'Hans';
+
 }
 .news-item .author {
     display: inline-block;
