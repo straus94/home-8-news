@@ -54,6 +54,20 @@ h1, h2 {
     height: 0;
 }
 
+.row {
+    margin-right: -10px;
+    margin-left: 0;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.row > [class^="col"] {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 .content {
     background-color: #e2e7ec;
 
@@ -62,58 +76,60 @@ h1, h2 {
 .mainer {
     max-width: 1160px;
     margin: 0 auto;
+    padding: 30px;
 }
-.flex-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.flex-block .main {
+.main-news {
     background-image: url("../img/car.png");
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+    height: 100%;
     background-size: cover;
-    /* width: 740px; */
-    /* height: 540px; */
-    margin: 10px 10px;
-    padding: 40px;
+    box-sizing: border-box;
+    padding: 0 0 40px 40px;
+    /* margin: 0 0 100px 0; */
 }
-.flex-block .main h1 {
+
+.main-news .date {
+    color: #e4e4e4;
+    font-size: 13px;
+    margin: 0 0 26px 0;
+
+}
+.main-news h1 {
+    color: white;
     font-weight: bold;
     font-size: 30px;
-    color: white;
-}
-.flex-block .main .date {
-    color: black;
-    /* margin: 30px; */
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+
 }
 
-
-.flex-block .news {
+.news-item {
+    /* margin: 0 0 5px 0; */
     background-color: white;
-    margin: 10px 10px;
-    width: 360px;
 }
-.flex-block .news span {
-    font-size: 20px;
+
+.news-item img {
+    margin: 0 0 28px 0;
+    width: 100%;
 }
-.flex-block .news .description {
-    /* margin: 30px; */
-    padding: 30px;
-}
-.flex-block .news .description .date {
-    margin: 0 0 30px 0;
-    color: #818181;
+.news-item .date {
+    padding: 0 28px 22px 26px;
+    color: #898989;
     font-size: 13px;
+    text-transform: uppercase;
 }
-.flex-block .news .description span {
-    font-size: 25px;
-    line-height: 30px;
-    margin: 0 0 30px 0;
-    display: block;
+
+.news-item h2 {
+    padding: 0 26px 22px 26px;
+    font-size: 22px;
 }
-.flex-block .news .ava {
-    margin: 30px;
+.news-item .author {
+    display: inline-block;
+    padding: 44px 26px 22px 26px;
+    border-radius: 50%;
+
 }
